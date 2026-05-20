@@ -11,7 +11,7 @@ const PRODUCTS = [
         price: 15000,
         image: "Fotos/IMG_20260513_165907_246.jpg.jpeg",
         description: "Una rosa roja profunda hecha a mano con 15 limpiapipas de felpa ultra-suave. Perfecta para expresar un amor eterno y duradero que nunca se marchita.",
-        tags: ["15 Limpiapipas", "Alambre Floral", "Cinta Floratape", "100% Hecho a Mano"]
+        tags: ["Artesanal", "Alambre reforzado", "Detalles únicos", "Perfecta para regalar"]
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const PRODUCTS = [
         price: 25000,
         image: "Fotos/IMG_20260513_165911_432.jpg.jpeg",
         description: "Girasol vibrante con detalles en café y pétalos amarillos esponjosos. Llena cualquier espacio de luz, alegría y energía positiva.",
-        tags: ["25 Limpiapipas", "Alambre Reforzado", "Hojas Verdes", "Detalles en Café"]
+        tags: ["Colores vibrantes", "Alambre reforzado", "Diseño eterno", "Hecho a mano"]
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const PRODUCTS = [
         price: 12000,
         image: "Fotos/IMG_20260513_165918_865.jpg.jpeg",
         description: "Elegante tulipán de color rosa pastel que simboliza el cariño puro y la ternura. Un detalle sutil y sumamente encantador.",
-        tags: ["10 Limpiapipas", "Tallo Flexible", "Rosa Pastel", "Diseño Minimalista"]
+        tags: ["Tallo flexible", "Suave felpa", "Artesanal", "Perfecto para regalar"]
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const PRODUCTS = [
         price: 45000,
         image: "Fotos/IMG_20260513_170015_805.jpg.jpeg",
         description: "Un precioso ramo compuesto por 5 tallos de lavanda en degradé morado y lila, atado con un lazo de yute rústico. Transmite paz, tranquilidad y elegancia.",
-        tags: ["50 Limpiapipas", "Lazo de Yute", "Degradé de Lila", "Aroma de Amor"]
+        tags: ["Artesanal", "Papel Koreano", "Diseño eterno", "Hecho a mano"]
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const PRODUCTS = [
         price: 35000,
         image: "Fotos/IMG_20260513_170017_758.jpg.jpeg",
         description: "Una pequeña maceta tejida o decorada que contiene 3 margaritas sonrientes hechas a mano. Ideal para decorar el escritorio, buró o regalar una sonrisa duradera.",
-        tags: ["30 Limpiapipas", "Mini Maceta", "Margaritas", "Centro de Mesa"]
+        tags: ["Detalles únicos", "Artesanal", "Suave felpa", "Hecho a mano"]
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ const PRODUCTS = [
         price: 65000,
         image: "Fotos/IMG_20260513_170025_070.jpg.jpeg",
         description: "Una combinación espectacular de 3 rosas premium y 3 tulipanes de ensueño envueltos en papel coreano rosado con un lazo satinado de satén. El regalo definitivo de amor.",
-        tags: ["80 Limpiapipas", "Papel Coreano", "Lazo de Satén", "Combinación Especial"]
+        tags: ["Papel Koreano", "Perfecto para regalar", "Edición especial", "Artesanal"]
     },
     {
         id: 7,
@@ -65,7 +65,7 @@ const PRODUCTS = [
         price: 55000,
         image: "Fotos/IMG_20260513_170136_431.jpg.jpeg",
         description: "Exclusiva orquídea morada recreada pétalo a pétalo con limpiapipas estructurados. Viene en una maceta elegante lista para embellecer cualquier rincón especial.",
-        tags: ["60 Limpiapipas", "Maceta Premium", "Alambre Estructural", "Pétalos Detallados"]
+        tags: ["Alambre reforzado", "Detalles únicos", "Diseño eterno", "Artesanal"]
     },
     {
         id: 8,
@@ -74,7 +74,7 @@ const PRODUCTS = [
         price: 80000,
         image: "Fotos/IMG_20260513_170139_985.jpg.jpeg",
         description: "Una lujosa caja en forma de corazón que incluye 6 rosas de limpiapipas rojas perfectas combinadas con un espacio para deliciosos chocolates de tu elección. Una verdadera obra de arte.",
-        tags: ["90 Limpiapipas", "Caja de Corazón", "Rosas Rojas", "Edición Especial"]
+        tags: ["Edición especial", "Perfecto para regalar", "Hecho a mano", "Detalles únicos"]
     },
     {
         id: 9,
@@ -83,7 +83,7 @@ const PRODUCTS = [
         price: 50000,
         image: "Fotos/IMG_20260513_170231_797.jpg.jpeg",
         description: "Un hermoso ramo de tulipanes en colores pastel, envueltos con delicadeza en papel coreano. Diseñado para llenar de luz y alegría.",
-        tags: ["Tulipanes de Limpiapipas", "Tallo Estructurado", "Papel Coreano Pastel", "100% Hecho a Mano"]
+        tags: ["Papel Koreano", "Colores vibrantes", "Artesanal", "Hecho a mano"]
     },
     {
         id: 10,
@@ -92,7 +92,7 @@ const PRODUCTS = [
         price: 48000,
         image: "Fotos/IMG_20260513_170413_401.jpg.jpeg",
         description: "Ramo campestre con margaritas blancas y amarillas combinadas con follaje verde estructurado. Transmite frescura, pureza y paz.",
-        tags: ["Margaritas", "Hojas de Limpiapipas", "Envoltura Rústica", "Detalles Únicos"]
+        tags: ["Colores vibrantes", "Artesanal", "Detalles únicos", "Hecho a mano"]
     },
     {
         id: 11,
@@ -101,7 +101,7 @@ const PRODUCTS = [
         price: 75000,
         image: "Fotos/IMG_20260513_170415_944.jpg.jpeg",
         description: "Un ramo de gran tamaño que combina margaritas, rosas y tulipanes en una explosión de color y alegría.",
-        tags: ["Combinación Floral", "Envoltura Satinada", "Hojas Verdes Esponjosas", "Diseño Premium"]
+        tags: ["Papel Koreano", "Perfecto para regalar", "Colores vibrantes", "Artesanal"]
     },
     {
         id: 12,
@@ -110,7 +110,7 @@ const PRODUCTS = [
         price: 52000,
         image: "Fotos/IMG_20260513_170714_690.jpg.jpeg",
         description: "Delicados lirios rosados combinados en un ramo romántico con envoltura en tonos pastel. Simboliza la gratitud y la ternura.",
-        tags: ["Lirios Rosados", "Detalles Brillantes", "Moño de Raso", "Elaborado con Amor"]
+        tags: ["Colores vibrantes", "Artesanal", "Perfecto para regalar", "Detalles únicos"]
     },
     {
         id: 13,
@@ -119,7 +119,7 @@ const PRODUCTS = [
         price: 55000,
         image: "Fotos/IMG_20260513_170716_913.jpg.jpeg",
         description: "Elegante arreglo de lirios rosados y blancos tejidos a mano, perfecto para obsequiar a esa persona que ilumina tus días.",
-        tags: ["Lirios Premium", "Papel Coreano Doble", "Tallo Reforzado", "Edición Romántica"]
+        tags: ["Papel Koreano", "Alambre reforzado", "Diseño eterno", "Artesanal"]
     },
     {
         id: 14,
@@ -128,7 +128,7 @@ const PRODUCTS = [
         price: 70000,
         image: "Fotos/IMG_20260513_170726_507.jpg.jpeg",
         description: "Una combinación sofisticada de rosas rojas y lirios rosados envueltos en papel coreano de diseñador.",
-        tags: ["Rosas Rojas", "Lirios Rosas", "Diseño de Diseñador", "Amor Eterno"]
+        tags: ["Papel Koreano", "Perfecto para regalar", "Edición especial", "Hecho a mano"]
     },
     {
         id: 15,
@@ -137,7 +137,7 @@ const PRODUCTS = [
         price: 72000,
         image: "Fotos/IMG_20260513_170726_554.jpg.jpeg",
         description: "Ramo de ensueño con una mezcla selecta de flores en tonos rosa, fucsia y blanco, ideal para aniversarios o propuestas especiales.",
-        tags: ["Flores Variadas", "Tonos Románticos", "Envoltura Especial", "Lazo Satinado"]
+        tags: ["Colores vibrantes", "Papel Koreano", "Artesanal", "Hecho a mano"]
     },
     {
         id: 16,
@@ -146,7 +146,7 @@ const PRODUCTS = [
         price: 95000,
         image: "Fotos/IMG_20260513_170726_666.jpg.jpeg",
         description: "La máxima expresión de cariño. Un ramo extra grande y tupido con lirios, rosas y follaje variado en una envoltura premium espectacular.",
-        tags: ["Tamaño Extra Grande", "Lirios y Rosas", "Follaje Abundante", "Lazo Doble Satinado"]
+        tags: ["Papel Koreano", "Perfecto para regalar", "Edición especial", "Detalles únicos"]
     },
     {
         id: 17,
@@ -155,7 +155,7 @@ const PRODUCTS = [
         price: 58000,
         image: "Fotos/IMG_20260513_170907_896.jpg.jpeg",
         description: "Un ramo alegre compuesto de vibrantes girasoles amarillos y follaje verde, perfecto para felicitar en graduaciones o logros especiales.",
-        tags: ["Girasoles", "Hojas Verdes", "Moño Amarillo", "Energía Positiva"]
+        tags: ["Colores vibrantes", "Artesanal", "Perfecto para regalar", "Hecho a mano"]
     },
     {
         id: 18,
@@ -164,7 +164,7 @@ const PRODUCTS = [
         price: 68000,
         image: "Fotos/IMG_20260513_170918_135.jpg.jpeg",
         description: "Hermosa combinación de girasoles radiantes y rosas rojas que representa la calidez de un amor apasionado y sincero.",
-        tags: ["Girasoles y Rosas", "Combinación Cálida", "Papel Negro Elegante", "Estilo Premium"]
+        tags: ["Papel Koreano", "Colores vibrantes", "Perfecto para regalar", "Artesanal"]
     },
     {
         id: 19,
@@ -173,7 +173,7 @@ const PRODUCTS = [
         price: 70000,
         image: "Fotos/IMG_20260513_170918_194.jpg.jpeg",
         description: "Ramo espectacular con una selecta combinación de rosas de limpiapipas rojas y girasoles vibrantes en envoltura premium.",
-        tags: ["Rosas Rojas", "Girasoles Grandes", "Envoltura Satinada", "Detalle Inolvidable"]
+        tags: ["Papel Koreano", "Colores vibrantes", "Perfecto para regalar", "Edición especial"]
     },
     {
         id: 20,
@@ -182,7 +182,7 @@ const PRODUCTS = [
         price: 62000,
         image: "Fotos/IMG_20260513_170925_631.jpg.jpeg",
         description: "Ramo elegante de girasoles eternos atados con cinta decorativa. Una creación que durará para siempre en el corazón de quien la reciba.",
-        tags: ["Girasoles Eternos", "Cinta Rústica", "Diseño Minimalista", "100% Hecho a Mano"]
+        tags: ["Alambre reforzado", "Artesanal", "Hecho a mano", "Diseño eterno"]
     }
 ];
 
