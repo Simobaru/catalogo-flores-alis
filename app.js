@@ -188,7 +188,7 @@ const PRODUCTS = [
 
 // --- NÚMERO DE TELÉFONO DE ALLISON ---
 // (Aquí colocamos el número de contacto de Allison en formato internacional, se puede cambiar)
-const WHATSAPP_PHONE = "573000000000"; // Reemplazar con el número real de Alis
+const WHATSAPP_PHONE = "573136498818"; // Reemplazar con el número real de Alis
 
 // --- ESTADO GLOBAL ---
 let activeCategory = "all";

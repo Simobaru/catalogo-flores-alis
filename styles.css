@@ -733,7 +733,8 @@ body {
 }
 
 .polaroid-product-title,
-.polaroid-product-price {
+.polaroid-product-price,
+.polaroid-product-desc {
     display: none !important;
 }
 
