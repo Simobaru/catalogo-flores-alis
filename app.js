@@ -75,6 +75,114 @@ const PRODUCTS = [
         image: "Fotos/IMG_20260513_170139_985.jpg.jpeg",
         description: "Una lujosa caja en forma de corazón que incluye 6 rosas de limpiapipas rojas perfectas combinadas con un espacio para deliciosos chocolates de tu elección. Una verdadera obra de arte.",
         tags: ["90 Limpiapipas", "Caja de Corazón", "Rosas Rojas", "Edición Especial"]
+    },
+    {
+        id: 9,
+        name: "Ramo Primavera de Tulipanes",
+        category: "bouquet",
+        price: 50000,
+        image: "Fotos/IMG_20260513_170231_797.jpg.jpeg",
+        description: "Un hermoso ramo de tulipanes en colores pastel, envueltos con delicadeza en papel coreano. Diseñado para llenar de luz y alegría.",
+        tags: ["Tulipanes de Limpiapipas", "Tallo Estructurado", "Papel Coreano Pastel", "100% Hecho a Mano"]
+    },
+    {
+        id: 10,
+        name: "Ramo Silvestre de Margaritas",
+        category: "bouquet",
+        price: 48000,
+        image: "Fotos/IMG_20260513_170413_401.jpg.jpeg",
+        description: "Ramo campestre con margaritas blancas y amarillas combinadas con follaje verde estructurado. Transmite frescura, pureza y paz.",
+        tags: ["Margaritas", "Hojas de Limpiapipas", "Envoltura Rústica", "Detalles Únicos"]
+    },
+    {
+        id: 11,
+        name: "Super Ramo Floreciente",
+        category: "bouquet",
+        price: 75000,
+        image: "Fotos/IMG_20260513_170415_944.jpg.jpeg",
+        description: "Un ramo de gran tamaño que combina margaritas, rosas y tulipanes en una explosión de color y alegría.",
+        tags: ["Combinación Floral", "Envoltura Satinada", "Hojas Verdes Esponjosas", "Diseño Premium"]
+    },
+    {
+        id: 12,
+        name: "Ramo Dulce Suspiro de Lirios",
+        category: "bouquet",
+        price: 52000,
+        image: "Fotos/IMG_20260513_170714_690.jpg.jpeg",
+        description: "Delicados lirios rosados combinados en un ramo romántico con envoltura en tonos pastel. Simboliza la gratitud y la ternura.",
+        tags: ["Lirios Rosados", "Detalles Brillantes", "Moño de Raso", "Elaborado con Amor"]
+    },
+    {
+        id: 13,
+        name: "Ramo Elegancia de Lirios Rosas",
+        category: "bouquet",
+        price: 55000,
+        image: "Fotos/IMG_20260513_170716_913.jpg.jpeg",
+        description: "Elegante arreglo de lirios rosados y blancos tejidos a mano, perfecto para obsequiar a esa persona que ilumina tus días.",
+        tags: ["Lirios Premium", "Papel Coreano Doble", "Tallo Reforzado", "Edición Romántica"]
+    },
+    {
+        id: 14,
+        name: "Ramo Esplendor de Rosas y Lirios",
+        category: "bouquet",
+        price: 70000,
+        image: "Fotos/IMG_20260513_170726_507.jpg.jpeg",
+        description: "Una combinación sofisticada de rosas rojas y lirios rosados envueltos en papel coreano de diseñador.",
+        tags: ["Rosas Rojas", "Lirios Rosas", "Diseño de Diseñador", "Amor Eterno"]
+    },
+    {
+        id: 15,
+        name: "Ramo Encanto Romántico",
+        category: "bouquet",
+        price: 72000,
+        image: "Fotos/IMG_20260513_170726_554.jpg.jpeg",
+        description: "Ramo de ensueño con una mezcla selecta de flores en tonos rosa, fucsia y blanco, ideal para aniversarios o propuestas especiales.",
+        tags: ["Flores Variadas", "Tonos Románticos", "Envoltura Especial", "Lazo Satinado"]
+    },
+    {
+        id: 16,
+        name: "Gran Ramo Celebración de Amor",
+        category: "bouquet",
+        price: 95000,
+        image: "Fotos/IMG_20260513_170726_666.jpg.jpeg",
+        description: "La máxima expresión de cariño. Un ramo extra grande y tupido con lirios, rosas y follaje variado en una envoltura premium espectacular.",
+        tags: ["Tamaño Extra Grande", "Lirios y Rosas", "Follaje Abundante", "Lazo Doble Satinado"]
+    },
+    {
+        id: 17,
+        name: "Ramo Destello Dorado de Girasoles",
+        category: "bouquet",
+        price: 58000,
+        image: "Fotos/IMG_20260513_170907_896.jpg.jpeg",
+        description: "Un ramo alegre compuesto de vibrantes girasoles amarillos y follaje verde, perfecto para felicitar en graduaciones o logros especiales.",
+        tags: ["Girasoles", "Hojas Verdes", "Moño Amarillo", "Energía Positiva"]
+    },
+    {
+        id: 18,
+        name: "Ramo Cálido Atardecer (Girasoles y Rosas)",
+        category: "bouquet",
+        price: 68000,
+        image: "Fotos/IMG_20260513_170918_135.jpg.jpeg",
+        description: "Hermosa combinación de girasoles radiantes y rosas rojas que representa la calidez de un amor apasionado y sincero.",
+        tags: ["Girasoles y Rosas", "Combinación Cálida", "Papel Negro Elegante", "Estilo Premium"]
+    },
+    {
+        id: 19,
+        name: "Ramo Pasión y Luz",
+        category: "bouquet",
+        price: 70000,
+        image: "Fotos/IMG_20260513_170918_194.jpg.jpeg",
+        description: "Ramo espectacular con una selecta combinación de rosas de limpiapipas rojas y girasoles vibrantes en envoltura premium.",
+        tags: ["Rosas Rojas", "Girasoles Grandes", "Envoltura Satinada", "Detalle Inolvidable"]
+    },
+    {
+        id: 20,
+        name: "Ramo Girasoles del Alma",
+        category: "bouquet",
+        price: 62000,
+        image: "Fotos/IMG_20260513_170925_631.jpg.jpeg",
+        description: "Ramo elegante de girasoles eternos atados con cinta decorativa. Una creación que durará para siempre en el corazón de quien la reciba.",
+        tags: ["Girasoles Eternos", "Cinta Rústica", "Diseño Minimalista", "100% Hecho a Mano"]
     }
 ];
 
