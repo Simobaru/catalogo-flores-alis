@@ -108,7 +108,7 @@ body {
     object-fit: contain;
     border-radius: 50%;
     border: 6px solid white; /* Efecto borde pegatina */
-    background: #FFF;
+    background: #000;
     box-shadow: 0 10px 25px rgba(255, 107, 139, 0.18), 0 2px 5px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
 }
