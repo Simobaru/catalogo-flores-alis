@@ -1,0 +1,718 @@
+/* ==========================================================================
+   Flores de Alis - Estilos Estéticos Premium (Vanilla CSS)
+   ========================================================================== */
+
+/* Variables de Diseño */
+:root {
+    --bg-gradient: linear-gradient(135deg, #FFF0F2 0%, #FFFFFF 100%);
+    --primary-color: #FF6B8B;
+    --primary-hover: #FF4F75;
+    --secondary-color: #FFB7C5;
+    --accent-color: #FFD700;
+    --text-main: #4A3B40;
+    --text-muted: #8E7A80;
+    --glass-bg: rgba(255, 255, 255, 0.65);
+    --glass-border: rgba(255, 255, 255, 0.4);
+    --glass-shadow: 0 10px 30px rgba(255, 107, 139, 0.08);
+    --polaroid-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    --border-radius-lg: 24px;
+    --border-radius-md: 16px;
+    --font-heading: 'Dancing Script', cursive;
+    --font-body: 'Poppins', sans-serif;
+    --font-handwritten: 'Patrick Hand', cursive;
+}
+
+/* Reset y Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 🌸 Lluvia Dinámica de Fondo (Ambient Background) */
+.ambient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.ambient-element {
+    position: absolute;
+    bottom: -50px;
+    font-size: 24px;
+    opacity: 0.7;
+    user-select: none;
+    animation: floatUp 15s linear infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Contenedor Principal */
+.app-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado / Hero */
+.hero-section {
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.sticker-wrapper {
+    margin-bottom: 15px;
+    display: inline-block;
+    animation: stickerFloat 4s infinite ease-in-out;
+}
+
+.alis-avatar-sticker {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 6px solid white; /* Efecto borde pegatina */
+    background: #FFF;
+    box-shadow: 0 10px 25px rgba(255, 107, 139, 0.18), 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.alis-avatar-sticker:hover {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 15px 35px rgba(255, 107, 139, 0.25);
+}
+
+@keyframes stickerFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(-1deg);
+    }
+    50% {
+        transform: translateY(-8px) rotate(2deg);
+    }
+}
+
+.romantic-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2.8rem, 8vw, 4rem);
+    color: var(--primary-color);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 107, 139, 0.1);
+    margin-bottom: 5px;
+}
+
+.handwritten-subtitle {
+    font-family: var(--font-handwritten);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+}
+
+.hero-divider {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin-top: 15px;
+    letter-spacing: 4px;
+    opacity: 0.8;
+}
+
+/* Tarjetas en Glassmorphism (Efecto Cristal) */
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--glass-shadow);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Filtros Categorías */
+.filters-container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.filters-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 5px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+    max-width: 100%;
+}
+
+.filters-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 107, 139, 0.15);
+    color: var(--text-main);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.filter-btn i {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: rgba(255, 107, 139, 0.05);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-btn:hover i {
+    transform: rotate(15deg) scale(1.1);
+}
+
+.filter-btn.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 6px 15px rgba(255, 107, 139, 0.25);
+}
+
+/* Grilla de Productos */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* 🖼️ Tarjeta de Producto (Estilo Polaroid) */
+.product-card-container {
+    perspective: 1000px;
+}
+
+.product-card {
+    background: white;
+    padding: 15px 15px 45px 15px; /* Base ancha típica de Polaroid */
+    border-radius: 12px;
+    box-shadow: var(--polaroid-shadow);
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center bottom;
+    border: 1px solid rgba(0,0,0,0.03);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de cinta decorativa en hover */
+.product-card::before {
+    content: '💝';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.03) translateY(-8px) rotate(1.5deg);
+    box-shadow: 0 25px 50px rgba(255, 107, 139, 0.15);
+}
+
+.product-card:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.product-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Cuadrado perfecto estilo Polaroid */
+    border-radius: 6px;
+    overflow: hidden;
+    background: #FAFAFA;
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.product-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.08);
+}
+
+.product-card-caption {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.product-card-title {
+    font-family: var(--font-handwritten);
+    font-size: 20px;
+    color: var(--text-main);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-card-price {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Indicador de categoría flotante */
+.product-badge {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 107, 139, 0.2);
+    color: var(--primary-color);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Creador de Tarjetas de Regalo */
+.gift-card-maker {
+    margin: 20px auto 40px auto;
+    max-width: 650px;
+    width: 100%;
+}
+
+.gift-maker-card {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gift-maker-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 183, 197, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.gift-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    animation: floatIcon 3s infinite ease-in-out;
+}
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.gift-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.gift-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.input-group {
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 107, 139, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    outline: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--text-main);
+    transition: all 0.3s ease;
+}
+
+.input-group textarea {
+    height: 90px;
+    resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-color);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(255, 107, 139, 0.1);
+}
+
+.btn-save-gift {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(255, 107, 139, 0.2);
+    margin-top: 5px;
+}
+
+.btn-save-gift:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 139, 0.3);
+}
+
+.btn-save-gift:active {
+    transform: translateY(1px);
+}
+
+.gift-saved-toast {
+    font-family: var(--font-handwritten);
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-top: 12px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all 0.3s ease;
+    display: none;
+}
+
+.gift-saved-toast.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Pie de Página */
+.app-footer {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: auto;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255, 107, 139, 0.08);
+}
+
+.footer-love {
+    font-family: var(--font-handwritten);
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* ==========================================================================
+   🖼️ Modal de Detalle Estilo Polaroid
+   ========================================================================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(74, 59, 64, 0.4);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.polaroid-wrapper {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    transform: scale(0.9) rotate(-3deg);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.modal-overlay.active .polaroid-wrapper {
+    transform: scale(1) rotate(0deg);
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    color: var(--text-main);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 110;
+    transition: all 0.2s ease;
+}
+
+.close-modal-btn:hover {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: white;
+}
+
+.polaroid-card {
+    background: white;
+    padding: 18px 18px 55px 18px; /* Polaroid real con margen ancho abajo */
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.polaroid-photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0,0,0,0.04);
+}
+
+.polaroid-caption {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.polaroid-product-title {
+    font-family: var(--font-handwritten);
+    font-size: 26px;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.polaroid-product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.polaroid-product-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.polaroid-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+.polaroid-tag {
+    background: #FFF0F2;
+    border: 1px solid rgba(255, 107, 139, 0.1);
+    color: var(--primary-color);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* Acciones del Modal */
+.modal-actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-whatsapp-order {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #25D366; /* Color oficial WhatsApp */
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    width: 100%;
+}
+
+.btn-whatsapp-order:hover {
+    background: #128C7E;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp-order i {
+    width: 18px;
+    height: 18px;
+}
+
+/* Partículas de Clic (Corazones) */
+.click-heart-particle {
+    position: fixed;
+    pointer-events: none;
+    font-size: 16px;
+    z-index: 1000;
+    animation: heartFly 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes heartFly {
+    0% {
+        transform: translate(-50%, -50%) scale(1) translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.5) translate(var(--tx), var(--ty));
+        opacity: 0;
+    }
+}
+
+/* ==========================================================================
+   Responsividad y Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px;
+    }
+    
+    .hero-section {
+        padding: 20px 5px 10px 5px;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Dos columnas compactas en celulares */
+        gap: 15px;
+    }
+    
+    .product-card {
+        padding: 8px 8px 30px 8px; /* Más compacto en celulares */
+        border-radius: 8px;
+    }
+    
+    .product-card-title {
+        font-size: 15px;
+    }
+    
+    .product-card-price {
+        font-size: 13px;
+    }
+    
+    .product-badge {
+        top: 15px;
+        right: 15px;
+        padding: 2px 6px;
+        font-size: 9px;
+    }
+    
+    .gift-maker-card {
+        padding: 20px;
+    }
+    
+    .polaroid-wrapper {
+        max-width: 320px;
+    }
+    
+    .polaroid-card {
+        padding: 12px 12px 40px 12px;
+    }
+    
+    .polaroid-product-title {
+        font-size: 20px;
+    }
+    
+    .polaroid-product-price {
+        font-size: 15px;
+    }
+    
+    .polaroid-product-desc {
+        font-size: 11px;
+    }
+}

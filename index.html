@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Flores de Alis - Catálogo de Amor 🌸</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Patrick+Hand&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Fotos/favicon.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Lluvia dinámica de fondo -->
+    <div id="ambient-background" class="ambient-background"></div>
+
+    <div class="app-container">
+        <!-- Encabezado / Hero -->
+        <header class="hero-section">
+            <div class="sticker-wrapper">
+                <img src="Fotos/caricatura_alis.png" alt="Alis Sticker" class="alis-avatar-sticker">
+            </div>
+            <h1 class="romantic-title">Flores de Alis</h1>
+            <p class="handwritten-subtitle">Creaciones hechas a mano con amor y limpiapipas ✨</p>
+            <div class="hero-divider">🌸 • 💖 • 🌸</div>
+        </header>
+
+        <!-- Filtros Categorías -->
+        <section class="filters-container">
+            <div class="filters-scroll">
+                <button class="filter-btn active" data-category="all">
+                    <i data-lucide="flower-2"></i> Todos
+                </button>
+                <button class="filter-btn" data-category="individual">
+                    <i data-lucide="sparkles"></i> Individuales
+                </button>
+                <button class="filter-btn" data-category="bouquet">
+                    <i data-lucide="gift"></i> Ramos
+                </button>
+                <button class="filter-btn" data-category="potted">
+                    <i data-lucide="heart"></i> Macetas
+                </button>
+                <button class="filter-btn" data-category="special">
+                    <i data-lucide="award"></i> Especiales
+                </button>
+            </div>
+        </section>
+
+        <!-- Grilla de Productos -->
+        <main class="products-section">
+            <div id="products-grid" class="products-grid">
+                <!-- Se inyecta dinámicamente desde app.js -->
+            </div>
+        </main>
+
+        <!-- Sección de Tarjeta de Regalo Personalizada -->
+        <section class="gift-card-maker">
+            <div class="glass-card gift-maker-card">
+                <div class="gift-icon">💌</div>
+                <h2 class="gift-title">¿Es un regalo para alguien especial?</h2>
+                <p class="gift-desc">Escribe una dedicatoria aquí y la añadiremos automáticamente a tu cotización y pedido de WhatsApp.</p>
+                <div class="input-group">
+                    <input type="text" id="gift-recipient" placeholder="¿Para quién es? (Ej: Mi Amor, Mamá...)">
+                </div>
+                <div class="input-group">
+                    <textarea id="gift-message" placeholder="Escribe un mensaje tierno... (Ej: Gracias por iluminar mis días. Te amo.)"></textarea>
+                </div>
+                <button class="btn-save-gift" id="btn-save-gift">
+                    <i data-lucide="check"></i> Guardar dedicatoria
+                </button>
+                <div id="gift-saved-toast" class="gift-saved-toast">¡Dedicatoria guardada con éxito! 💕</div>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="app-footer">
+            <p class="footer-love">Hecho con todo el amor del mundo para Alis 💕</p>
+            <p class="footer-copyright">&copy; 2026 Flores de Alis. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Modal Detalle Estilo Polaroid -->
+    <div id="polaroid-modal" class="modal-overlay">
+        <div class="polaroid-wrapper">
+            <button class="close-modal-btn" id="close-modal-btn">&times;</button>
+            <div class="polaroid-card">
+                <div id="modal-image" class="polaroid-photo"></div>
+                <div class="polaroid-caption">
+                    <h3 id="modal-title" class="polaroid-product-title">Nombre del Producto</h3>
+                    <p id="modal-price" class="polaroid-product-price">$0 COP</p>
+                    <p id="modal-desc" class="polaroid-product-desc">Descripción del producto...</p>
+                    <div id="modal-tags" class="polaroid-tags">
+                        <!-- Tags de materiales de limpiapipas -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Acciones fuera del marco físico de la Polaroid -->
+            <div class="modal-actions">
+                <a id="btn-whatsapp-order" href="#" target="_blank" class="btn-whatsapp-order">
+                    <i data-lucide="message-circle"></i> Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="app.js"></script>
+</body>
+</html>
