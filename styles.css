@@ -716,3 +716,32 @@ body {
         font-size: 11px;
     }
 }
+
+/* ==========================================================================
+   Temporal: Ocultar filtros, nombres y precios (Reversible)
+   ========================================================================== */
+.filters-container {
+    display: none !important;
+}
+
+.product-card-caption {
+    display: none !important;
+}
+
+.product-badge {
+    display: none !important;
+}
+
+.polaroid-product-title,
+.polaroid-product-price {
+    display: none !important;
+}
+
+/* Ajuste de padding para equilibrar las tarjetas Polaroid sin textos */
+.product-card {
+    padding-bottom: 15px !important;
+}
+
+.polaroid-card {
+    padding-bottom: 20px !important;
+}
