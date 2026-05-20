@@ -422,9 +422,7 @@ function closeProductModal() {
 
 // --- 💌 CONSTRUCCIÓN DE MENSAJE DE WHATSAPP ---
 function buildWhatsAppMessage(product) {
-    let msg = `¡Hola Alis! 🌸 Acabo de ver tu catálogo web y me enamoré de una de tus creaciones hecha con amor:\n\n`;
-    msg += `💖 *Creación:* ${product.name}\n`;
-    msg += `💵 *Precio:* $${product.price.toLocaleString("es-CO")} COP\n\n`;
+    let msg = `¡Hola Alis! 🌸 Acabo de ver tu catálogo web y me enamoré de una de tus creaciones hecha con amor (Ref: Modelo #${product.id}).\n\n`;
 
     // Si tiene dedicatoria guardada, la añadimos
     if (giftData.recipient || giftData.message) {
@@ -434,9 +432,10 @@ function buildWhatsAppMessage(product) {
         msg += `¿Podrías por favor agregar una tarjetita hecha a mano con esta dedicatoria? 🥰\n\n`;
     }
 
-    msg += `¿Tienes disponibilidad para elaborar este modelo o nos ponemos de acuerdo con los detalles? ¡Muchas gracias! ✨`;
+    msg += `¿Me podrías contar qué opciones tienes y qué precios manejas para este modelo, o cómo nos ponemos de acuerdo con los detalles? ¡Muchas gracias! ✨`;
     return msg;
 }
+
 
 // --- 💌 CONFIGURACIÓN DE DEDICATORIA DE REGALO ---
 function setupGiftCard() {
